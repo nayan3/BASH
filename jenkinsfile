@@ -1,0 +1,11 @@
+pipeline { 
+    agent any 
+    stages {
+        stage('Build') { 
+            steps { 
+                sh './check.sh'
+                sh './study.sh'
+            }
+        }
+       }
+  }
